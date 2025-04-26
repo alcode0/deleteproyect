@@ -1,8 +1,0 @@
-[build]
-builder = "dockerfile"
-dockerfilePath = "./ChatApi/Dockerfile"
-
-[deploy]
-startCommand = "./ChatApi"
-restartPolicyType = "always"
-healthcheckPath = "/health"
