@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./Dockerfile"
+
+[deploy]
+startCommand = "dotnet ChatApi.dll"
+restartPolicyType = "always"
+healthcheckPath = "/health"
